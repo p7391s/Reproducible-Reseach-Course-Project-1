@@ -31,7 +31,7 @@ The dataset is stored in a comma-separated-value (CSV) file and there are a tota
 
 ------------------------------------
 
-```r{}
+```{r}
 library("data.table")
 
 fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
@@ -69,7 +69,7 @@ head(Total_Steps, 10)
 
 ------------------------------------
 
-```{r}
+```{r plot, echo = TRUE}
 library(ggplot2)
 ggplot(Total_Steps, aes(x = steps)) +
 geom_histogram(fill = "green", binwidth = 1000) +

@@ -140,7 +140,7 @@ Total_Steps[, .(Mean_Steps = mean(steps), Median_Steps = median(steps))]
 
 --------------------------------
 
-```{r}
+```{r totstep, echo=TRUE}
 ggplot(Total_Steps, aes(x = steps)) +
 geom_histogram(fill = "purple", binwidth = 1000) +
 labs(title = "Daily Steps", x = "Steps", y = "Frequency")
